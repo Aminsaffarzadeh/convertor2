@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>##</title>
+    <style>
+        @font-face {
+            font-family: IRANSansWeb;
+            src: url('fonts/IRANSansWeb.eot');
+            src: url('fonts/IRANSansWeb?#iefix') format('fonts/IRANSansWeb-opentype'),
+                url('fonts/IRANSansWeb.woff') format('woff'),
+                url('fonts/IRANSansWeb.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+        main{
+            margin: 100px auto
+        }
+        body{
+            font-family: IRANSansWeb;
+            background-image: url("picture/a (6).jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        a{
+            text-decoration: none !important;
+        }
+        .navbarF{
+            background-color: burlywood;
+            text-align: center;
+        }
+        main nav .navbarF .st1 {
+            border: none;
+            color: aliceblue;
+            padding: 18px 25px;
+            color:#fff;
+            background:#25274d;
+            border-radius:0;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+        }
+        .row{
+            margin: 0px;
+        }
+        nav .st1:hover{
+            background:#e74c3c;
+        }
+        nav  a:after{
+            content: "";
+            position: relative;
+            bottom: -62px;
+            left: calc(0% - 44px);
+            border: 15px solid transparent;
+            border-top-color: #e74c3c ;
+        }
+        .tab-content{
+            background: #fdfdfd;
+            line-height: 25px;
+            border-top:5px solid #e74c3c;
+            border-bottom:5px solid #e74c3c;
+            padding:30px 25px;
+        }
+        .text-center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="borders">
+                <nav>
+                    <div class=" navbarF">
+                        <div class="row">
+                            <a class="col-md-6 col-sm-6 col-xs-12 st1 nav-item nav-link active" data-toggle="tab" href="#nav-Converter" id="nav-home-tab" onclick="m1('#e74c3c','#25274d')">
+                                <span class="glyphicon glyphicon-edit"></span>
+                                    Converter
+                            </a>
+                            <a class="col-md-6 col-sm-6 col-xs-12 st1 nav-item nav-link" data-toggle="tab" href="#nav-Settings" id="nav-profile-tab" onclick="m1('#25274d','#e74c3c')">
+                                <span class="glyphicon glyphicon-cog"></span>
+                                    Settings
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="tab-content " id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-Converter" >
+                            <div class="row">
+                                <div class="col-md-6 text-center">
+                                    <input type="text">
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade text-center" id="nav-Settings">
+                            <span>Convert </span>
+                             <select name="" id="p1">
+                                 <option value="Dollars">Dollars</option>
+                                 <option value="Euros">Euros</option>
+                                 <option value="Lier">Lier</option>
+                                 <option value="Dirham">Dirham</option>
+                             </select>
+                             <span> To </span>
+                             <select name="" id="p2">
+                                    <option value="Dollars">Dollars</option>
+                                    <option value="Euros">Euros</option>
+                                    <option value="Lier">Lier</option>
+                                    <option value="Dirham">Dirham</option>
+                            </select>
+                        </div>
+                </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('p1').options[0].value="1";
+        document.getElementById('p1').options[1].value="2";
+        document.getElementById('p1').options[2].value="3";
+        document.getElementById('p1').options[3].value="4";
+
+        // function getSelectedOption(sel) {
+        //     for ( var i = 0, len = sel.options.length; i < len; i++ ) {
+        //         if ( sel.options[i].selected === true ) {
+        //             break;
+        //         }
+        //     }
+        //     return opt;
+        // }
+        function m1(a,b){
+            console.log(document.getElementById('p1').options[0].value)
+            document.getElementById("nav-home-tab").style.backgroundColor=a;
+            document.getElementById("nav-profile-tab").style.backgroundColor=b;
+        }
+    </script>
+
+</body>
+</html>
