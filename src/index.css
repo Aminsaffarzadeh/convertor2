@@ -1,0 +1,78 @@
+
+.marginAuto{
+  margin-top: 100px !important;
+}
+a{
+  text-decoration: none !important;
+  color: white !important;
+}
+.navbarF{
+  background-color: #25274d;
+  text-align: center;
+}
+.main nav .navbarF .st1 {
+  border: none;
+  color: aliceblue;
+  padding: 18px 25px;
+  color:#fff;
+  background:#25274d;
+  border-radius:0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+.row{
+  margin: 0px !important;
+}
+nav .st1:hover{
+  background:#e74c3c !important;
+}
+
+.tab-content{
+  background: #fdfdfd;
+  line-height: 25px;
+  border-top:5px solid #e74c3c;
+  border-bottom:5px solid #e74c3c;
+  padding:30px 25px;
+}
+.text-center{
+  text-align: center;
+}
+.borders{
+  text-align: center;
+  padding-top: 30px ;
+  border: 5px solid #e74c3c;
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+.st1:after{
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: calc(0% - 44px);
+  border: 15px solid transparent;
+  border-top-color: #e74c3c ;
+}
+input {
+  padding: 10px 5px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input:focus {
+  border: 3px solid #555;
+}
+.margin1{
+  margin-top: 20px; 
+}
+select {
+  padding: 13px 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+select:focus {
+  border: 3px solid #555;
+}
